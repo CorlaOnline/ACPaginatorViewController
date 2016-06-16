@@ -22,10 +22,52 @@ pod "ACPaginatorViewController"
 
 ## Usage
 
-Your viewController must have these two types variable:
-*  ```UIView``` UIContainer that will contain the ACPaginatoViewController in your ViewController
-*  ```UIPageControl``` if you want to manage the page control
- 
+Your viewController must conform the ```ACPaginatorViewControllerDelegate``` so it must to implements these three variables:
+
+```swift 
+@IBOutlet weak var pageControl: UIPageControl?
+@IBOutlet weak var containerView: UIView!
+lazy var orderedViewControllers: [UIViewController] = { 
+
+	guard let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("First") as UIViewController? else { return [] }
+        
+  	guard let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Second") as UIViewController? else { return [] }
+        
+    return [firstVC, secondVC]
+        
+}()
+```
+In your storyboard connect a ``` UIContainerView``` to your variable ``` containerView ``` and the embedded ViewController must to be a ``` ACPaginatorViewController ```, optionally you can connect a ``` UIPageControl ``` to your ``` pageControl ``` variable.
+
+Return to your viewController file and in the ``` prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)``` method you have to pass to the navigator the ordered array of views and tell it that the view conforms to its protocol.
+
+```swift 
+override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+   if let paginatorViewController = segue.destinationViewController as? ACPaginatorViewController {
+
+       paginatorViewController.orderedViewControllers = orderedViewControllers
+       paginatorViewController.paginationDelegate = self
+
+    }
+
+}
+```
+Optionally you can implement these two methods to do something when the number of views change or when a page is turned.
+
+```swift 
+func paginatorViewController(paginatorViewController: ACPaginatorViewController, didUpdatePageCount count: Int) {
+
+   // Do something
+
+}
+
+func paginatorViewController(paginatorViewController: ACPaginatorViewController, didUpdatePageIndex index: Int) {
+
+   // Do something
+
+}
+```
 
 ## Author
 

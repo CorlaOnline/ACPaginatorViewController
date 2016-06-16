@@ -10,19 +10,6 @@ import UIKit
 import ACPaginatorViewController
 
 class ViewController: UIViewController, ACPaginatorViewControllerDelegate {
-
-    /*@IBOutlet weak var pageControl: UIPageControl?
-    @IBOutlet weak var containerView: UIView!
-
-    private(set) lazy var orderedViewControllers: [UIViewController] = {
-    
-        guard let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("First") as UIViewController? else { return [] }
-        
-        guard let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Second") as UIViewController? else { return [] }
-    
-        return [firstVC, secondVC]
-        
-    }()*/
     
     @IBOutlet weak var pageControl: UIPageControl?
     @IBOutlet weak var containerView: UIView!
@@ -58,18 +45,19 @@ class ViewController: UIViewController, ACPaginatorViewControllerDelegate {
 
 }
 
-/*extension ViewController: ACPaginatorViewControllerDelegate {
+// Optional method
+extension ViewController {
 
     func paginatorViewController(paginatorViewController: ACPaginatorViewController, didUpdatePageCount count: Int) {
 
-        pageControl?.numberOfPages = count
+        // Do something
 
     }
 
     func paginatorViewController(paginatorViewController: ACPaginatorViewController, didUpdatePageIndex index: Int) {
 
-        pageControl?.currentPage = index
+        // Do something
 
     }
 
-}*/
+}

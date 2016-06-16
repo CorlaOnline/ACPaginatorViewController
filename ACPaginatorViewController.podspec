@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ACPaginatorViewController'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Simple way to create a list of view with a pagination transition.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Simple way to create a list of view with a pagination transition.
                        DESC
 
   s.homepage         = 'https://github.com/CorlaOnline/ACPaginatorViewController.git'
@@ -26,7 +26,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Alex Corlatti' => 'alex.corlatti@gmail.com' }
   s.source           = { :git => 'https://github.com/CorlaOnline/ACPaginatorViewController.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/corlaOnline'
 
   s.ios.deployment_target = '8.0'
 
