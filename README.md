@@ -20,6 +20,13 @@ it, simply add the following line to your Podfile:
 pod "ACPaginatorViewController"
 ```
 
+## Usage
+
+Your viewController must have these two types variable:
+*  ```UIView``` UIContainer that will contain the ACPaginatoViewController in your ViewController
+*  ```UIPageControl``` if you want to manage the page control
+ 
+
 ## Author
 
 Alex Corlatti, alex.corlatti@gmail.com
