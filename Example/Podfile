@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ACPaginatorViewController_Example' do
+  pod 'ACPaginatorViewController', :path => '../'
+
+  target 'ACPaginatorViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
