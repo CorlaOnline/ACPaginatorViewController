@@ -9,9 +9,9 @@
 import UIKit
 import ACPaginatorViewController
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ACPaginatorViewControllerDelegate {
 
-    @IBOutlet weak var pageControl: UIPageControl?
+    /*@IBOutlet weak var pageControl: UIPageControl?
     @IBOutlet weak var containerView: UIView!
 
     private(set) lazy var orderedViewControllers: [UIViewController] = {
@@ -20,6 +20,19 @@ class ViewController: UIViewController {
         
         guard let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Second") as UIViewController? else { return [] }
     
+        return [firstVC, secondVC]
+        
+    }()*/
+    
+    @IBOutlet weak var pageControl: UIPageControl?
+    @IBOutlet weak var containerView: UIView!
+    
+    lazy var orderedViewControllers: [UIViewController] = {
+        
+        guard let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("First") as UIViewController? else { return [] }
+        
+        guard let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Second") as UIViewController? else { return [] }
+        
         return [firstVC, secondVC]
         
     }()
@@ -45,7 +58,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: ACPaginatorViewControllerDelegate {
+/*extension ViewController: ACPaginatorViewControllerDelegate {
 
     func paginatorViewController(paginatorViewController: ACPaginatorViewController, didUpdatePageCount count: Int) {
 
@@ -59,4 +72,4 @@ extension ViewController: ACPaginatorViewControllerDelegate {
 
     }
 
-}
+}*/

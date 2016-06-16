@@ -25,7 +25,8 @@ public class ACPaginatorViewController: UIPageViewController {
 
         }
 
-        paginationDelegate?.paginatorViewController(self, didUpdatePageCount: orderedViewControllers.count)
+        paginationDelegate?.pageControl?.numberOfPages = orderedViewControllers.count
+        paginationDelegate?.paginatorViewController?(self, didUpdatePageCount: orderedViewControllers.count)
 
     }
 
@@ -76,7 +77,8 @@ extension ACPaginatorViewController: UIPageViewControllerDelegate {
         if let firstViewController = viewControllers?.first,
             let index = orderedViewControllers.indexOf(firstViewController) {
 
-            paginationDelegate?.paginatorViewController(self, didUpdatePageIndex: index)
+            paginationDelegate?.pageControl?.currentPage = index
+            paginationDelegate?.paginatorViewController?(self, didUpdatePageIndex: index)
 
         }
     }

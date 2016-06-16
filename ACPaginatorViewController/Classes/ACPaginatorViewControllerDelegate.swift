@@ -6,7 +6,12 @@
 //
 //
 
-public protocol ACPaginatorViewControllerDelegate {
+@objc public protocol ACPaginatorViewControllerDelegate {
+
+    weak var pageControl: UIPageControl? { get set }
+    weak var containerView: UIView! { get set }
+
+    var orderedViewControllers: [UIViewController] { get set }
 
     /**
      Called when the number of pages is updated.
@@ -14,7 +19,7 @@ public protocol ACPaginatorViewControllerDelegate {
      - parameter paginatorViewController: the ACPaginatorViewController instance
      - parameter count: the total number of pages.
      */
-    func paginatorViewController(paginatorViewController: ACPaginatorViewController, didUpdatePageCount count: Int)
+    @objc optional func paginatorViewController(paginatorViewController: ACPaginatorViewController, didUpdatePageCount count: Int)
 
     /**
      Called when the current index is updated.
@@ -22,6 +27,6 @@ public protocol ACPaginatorViewControllerDelegate {
      - parameter paginatorViewController: the ACPaginatorViewController instance
      - parameter index: the index of the currently visible page.
      */
-    func paginatorViewController(paginatorViewController: ACPaginatorViewController, didUpdatePageIndex index: Int)
+    @objc optional func paginatorViewController(paginatorViewController: ACPaginatorViewController, didUpdatePageIndex index: Int)
 
 }
