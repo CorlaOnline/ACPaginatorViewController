@@ -6,8 +6,6 @@
 //
 //
 
-import UIKit
-
 public class ACPaginatorViewController: UIPageViewController {
 
     public var paginationDelegate: ACPaginatorViewControllerDelegate?
