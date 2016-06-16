@@ -1,0 +1,6 @@
+framework module ACPaginatorViewController {
+  umbrella header "ACPaginatorViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

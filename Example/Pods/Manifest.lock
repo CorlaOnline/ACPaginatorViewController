@@ -1,0 +1,16 @@
+PODS:
+  - ACPaginatorViewController (0.1.0)
+
+DEPENDENCIES:
+  - ACPaginatorViewController (from `../`)
+
+EXTERNAL SOURCES:
+  ACPaginatorViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ACPaginatorViewController: 103a503f9ec6e7b487b726ef8bb01a0be02f3aa4
+
+PODFILE CHECKSUM: b8ec61221a258ea92966b072e52f05aca71c0b3a
+
+COCOAPODS: 1.0.1

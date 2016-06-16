@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08B743FAC63AFED865B2F9FAD47EB7C4 /* Pods-ACPaginatorViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF72F6767B3CCA993803AC62F73904D4 /* Pods-ACPaginatorViewController_Tests-dummy.m */; };
+		15443FEA36E92CD0537DF3211E65420D /* ACPaginatorViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75B910861DA8474F931631A8EC901C22 /* ACPaginatorViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		277B909009E8EA4606B41D9344453115 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		3286494427F9DF98D3291E556385963D /* Pods-ACPaginatorViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7798670EFE3E5435EF6A7BB74750F9 /* Pods-ACPaginatorViewController_Example-dummy.m */; };
+		6AD493231ACE8C961358211ED8A68FE0 /* Pods-ACPaginatorViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F254896AEA4456837852B4828CA22A4A /* Pods-ACPaginatorViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78889954829C2C12B373A85B2A9493F6 /* Pods-ACPaginatorViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5A7C4389418F3C7C69492ADEE5305D /* Pods-ACPaginatorViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8058838B0765CF5CA29EC0C6F95D2109 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		B670C33DD85AEB0324A6C06C1D9797D4 /* ACPaginatorViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AB1644A47E5E9219396D7BD3FA75C6 /* ACPaginatorViewController-dummy.m */; };
+		B77FE238EA3BD17D38E9AD211F44A46D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		FAC7DDEF1D1298F50086FB11 /* ACPaginatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7DDEE1D1298F50086FB11 /* ACPaginatorViewController.swift */; };
+		FAC7DDF11D12999D0086FB11 /* ACPaginatorViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC7DDF01D12999D0086FB11 /* ACPaginatorViewControllerDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA30D3305CD41DAF263BDD6CFFAD1C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D5A3199C174B48299875006E7D66048;
+			remoteInfo = ACPaginatorViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21730C168B5ACE727D5D6F3540715FDC /* ACPaginatorViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPaginatorViewController-prefix.pch"; sourceTree = "<group>"; };
+		28B111B05D1BC3771974D734624B6406 /* Pods-ACPaginatorViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ACPaginatorViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		47C163DEAE4D992D2AFC53DA628A5979 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DAD0CC3C54C50512CFE6076B2763C75 /* ACPaginatorViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ACPaginatorViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FF6F855DFE2EDDFEEF72C27408286C7 /* Pods-ACPaginatorViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ACPaginatorViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		54F1F9E12ECF6A920B0289C26B467926 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CCFA7282F30E4DB502912AF9857FB24 /* Pods-ACPaginatorViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ACPaginatorViewController_Example.modulemap"; sourceTree = "<group>"; };
+		5E5A7C4389418F3C7C69492ADEE5305D /* Pods-ACPaginatorViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ACPaginatorViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		622FC3C36EFC189F5DD636612D865724 /* Pods-ACPaginatorViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ACPaginatorViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		62C8135B24E5D86B81B63DCA5A61916C /* Pods-ACPaginatorViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ACPaginatorViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		75B910861DA8474F931631A8EC901C22 /* ACPaginatorViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPaginatorViewController-umbrella.h"; sourceTree = "<group>"; };
+		7F7798670EFE3E5435EF6A7BB74750F9 /* Pods-ACPaginatorViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ACPaginatorViewController_Example-dummy.m"; sourceTree = "<group>"; };
+		82AC98E7AF12FCF50A210BC3FD3A0ADB /* Pods-ACPaginatorViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ACPaginatorViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		89DEE05AFA3CEDCD796D8DDE9F73E8E2 /* Pods-ACPaginatorViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ACPaginatorViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		8A3B66C47284A25DDAF3DF7734791543 /* Pods-ACPaginatorViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ACPaginatorViewController_Tests-resources.sh"; sourceTree = "<group>"; };
+		8A59615478FA47D406DD994643EC5AB4 /* ACPaginatorViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ACPaginatorViewController.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E6D8B2491DD70A9FA9D6382149F2A88 /* Pods-ACPaginatorViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ACPaginatorViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B3AB1644A47E5E9219396D7BD3FA75C6 /* ACPaginatorViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPaginatorViewController-dummy.m"; sourceTree = "<group>"; };
+		BC8A0DA472E5133562859053EA0D30A8 /* Pods-ACPaginatorViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ACPaginatorViewController_Example-resources.sh"; sourceTree = "<group>"; };
+		C2A9F2EF41CF1D43F491C8FEC80618F0 /* Pods_ACPaginatorViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACPaginatorViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC21BDBD5FD080E6FBA3611B4A52438 /* Pods-ACPaginatorViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ACPaginatorViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D63A79ED9C3D5E72A6183CCE5D3ECBD0 /* ACPaginatorViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPaginatorViewController.xcconfig; sourceTree = "<group>"; };
+		E5E9C19044ECD4F9DB4158E0F5A12127 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA26A90BD46F34E9B3A41598EB681CE6 /* Pods-ACPaginatorViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ACPaginatorViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EF72F6767B3CCA993803AC62F73904D4 /* Pods-ACPaginatorViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ACPaginatorViewController_Tests-dummy.m"; sourceTree = "<group>"; };
+		F1A04A188BCC9680242983E633C75805 /* Pods-ACPaginatorViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ACPaginatorViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		F254896AEA4456837852B4828CA22A4A /* Pods-ACPaginatorViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ACPaginatorViewController_Example-umbrella.h"; sourceTree = "<group>"; };
+		F28827C86AA28C9FA7766E16CD15AC50 /* Pods_ACPaginatorViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACPaginatorViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65AF3E673DF0EC8ACE456A665D3F29F /* Pods-ACPaginatorViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ACPaginatorViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FAC7DDEE1D1298F50086FB11 /* ACPaginatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACPaginatorViewController.swift; sourceTree = "<group>"; };
+		FAC7DDF01D12999D0086FB11 /* ACPaginatorViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACPaginatorViewControllerDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24D483FD7422BDA6C45E4DCC09D936FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				277B909009E8EA4606B41D9344453115 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0330E30C3E57C9F4EEB18FB528EC7C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8058838B0765CF5CA29EC0C6F95D2109 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27250AAC24B6B0A547369739916378E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77FE238EA3BD17D38E9AD211F44A46D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22DF9F1641A02F48DDA755CD820E9B85 /* Pods-ACPaginatorViewController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				54F1F9E12ECF6A920B0289C26B467926 /* Info.plist */,
+				89DEE05AFA3CEDCD796D8DDE9F73E8E2 /* Pods-ACPaginatorViewController_Tests.modulemap */,
+				82AC98E7AF12FCF50A210BC3FD3A0ADB /* Pods-ACPaginatorViewController_Tests-acknowledgements.markdown */,
+				9E6D8B2491DD70A9FA9D6382149F2A88 /* Pods-ACPaginatorViewController_Tests-acknowledgements.plist */,
+				EF72F6767B3CCA993803AC62F73904D4 /* Pods-ACPaginatorViewController_Tests-dummy.m */,
+				F1A04A188BCC9680242983E633C75805 /* Pods-ACPaginatorViewController_Tests-frameworks.sh */,
+				8A3B66C47284A25DDAF3DF7734791543 /* Pods-ACPaginatorViewController_Tests-resources.sh */,
+				5E5A7C4389418F3C7C69492ADEE5305D /* Pods-ACPaginatorViewController_Tests-umbrella.h */,
+				4FF6F855DFE2EDDFEEF72C27408286C7 /* Pods-ACPaginatorViewController_Tests.debug.xcconfig */,
+				CBC21BDBD5FD080E6FBA3611B4A52438 /* Pods-ACPaginatorViewController_Tests.release.xcconfig */,
+			);
+			name = "Pods-ACPaginatorViewController_Tests";
+			path = "Target Support Files/Pods-ACPaginatorViewController_Tests";
+			sourceTree = "<group>";
+		};
+		298332A5B8ED9BAA018A6AF5274605DF /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AFB333A2BED9602A5CCE089F7B307F5 /* ACPaginatorViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2B1642A416BF7FDA5DF1DF03C25AB8ED /* Pods-ACPaginatorViewController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				47C163DEAE4D992D2AFC53DA628A5979 /* Info.plist */,
+				5CCFA7282F30E4DB502912AF9857FB24 /* Pods-ACPaginatorViewController_Example.modulemap */,
+				F65AF3E673DF0EC8ACE456A665D3F29F /* Pods-ACPaginatorViewController_Example-acknowledgements.markdown */,
+				622FC3C36EFC189F5DD636612D865724 /* Pods-ACPaginatorViewController_Example-acknowledgements.plist */,
+				7F7798670EFE3E5435EF6A7BB74750F9 /* Pods-ACPaginatorViewController_Example-dummy.m */,
+				62C8135B24E5D86B81B63DCA5A61916C /* Pods-ACPaginatorViewController_Example-frameworks.sh */,
+				BC8A0DA472E5133562859053EA0D30A8 /* Pods-ACPaginatorViewController_Example-resources.sh */,
+				F254896AEA4456837852B4828CA22A4A /* Pods-ACPaginatorViewController_Example-umbrella.h */,
+				EA26A90BD46F34E9B3A41598EB681CE6 /* Pods-ACPaginatorViewController_Example.debug.xcconfig */,
+				28B111B05D1BC3771974D734624B6406 /* Pods-ACPaginatorViewController_Example.release.xcconfig */,
+			);
+			name = "Pods-ACPaginatorViewController_Example";
+			path = "Target Support Files/Pods-ACPaginatorViewController_Example";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4AFB333A2BED9602A5CCE089F7B307F5 /* ACPaginatorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				518EE205582FEA28D65D6C9CACDA6CE1 /* ACPaginatorViewController */,
+				9F99EA1B6920DA40CF77E413D4F9205B /* Support Files */,
+			);
+			name = ACPaginatorViewController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		518EE205582FEA28D65D6C9CACDA6CE1 /* ACPaginatorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E5F663D5DFDF550A0663DF123F1B2E69 /* Classes */,
+			);
+			path = ACPaginatorViewController;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				298332A5B8ED9BAA018A6AF5274605DF /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D10A1F3AB2222E36D867615DAD96ADB1 /* Products */,
+				8F2AADD577631331186209CA0F9D2CE4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8F2AADD577631331186209CA0F9D2CE4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B1642A416BF7FDA5DF1DF03C25AB8ED /* Pods-ACPaginatorViewController_Example */,
+				22DF9F1641A02F48DDA755CD820E9B85 /* Pods-ACPaginatorViewController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9F99EA1B6920DA40CF77E413D4F9205B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A59615478FA47D406DD994643EC5AB4 /* ACPaginatorViewController.modulemap */,
+				D63A79ED9C3D5E72A6183CCE5D3ECBD0 /* ACPaginatorViewController.xcconfig */,
+				B3AB1644A47E5E9219396D7BD3FA75C6 /* ACPaginatorViewController-dummy.m */,
+				21730C168B5ACE727D5D6F3540715FDC /* ACPaginatorViewController-prefix.pch */,
+				75B910861DA8474F931631A8EC901C22 /* ACPaginatorViewController-umbrella.h */,
+				E5E9C19044ECD4F9DB4158E0F5A12127 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ACPaginatorViewController";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D10A1F3AB2222E36D867615DAD96ADB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DAD0CC3C54C50512CFE6076B2763C75 /* ACPaginatorViewController.framework */,
+				F28827C86AA28C9FA7766E16CD15AC50 /* Pods_ACPaginatorViewController_Example.framework */,
+				C2A9F2EF41CF1D43F491C8FEC80618F0 /* Pods_ACPaginatorViewController_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5F663D5DFDF550A0663DF123F1B2E69 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FAC7DDEE1D1298F50086FB11 /* ACPaginatorViewController.swift */,
+				FAC7DDF01D12999D0086FB11 /* ACPaginatorViewControllerDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01CF8C96F59AE6F2244A94B33E156078 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15443FEA36E92CD0537DF3211E65420D /* ACPaginatorViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966D55F41EB040AF4D33E5FDAE599BF8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78889954829C2C12B373A85B2A9493F6 /* Pods-ACPaginatorViewController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A681CEB4A4CC960C676DD7BEB6E9A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AD493231ACE8C961358211ED8A68FE0 /* Pods-ACPaginatorViewController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D5A3199C174B48299875006E7D66048 /* ACPaginatorViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C0AA2A8B55FF5A1A9A6141B5A5EA5B0 /* Build configuration list for PBXNativeTarget "ACPaginatorViewController" */;
+			buildPhases = (
+				C516D3A1626818E9A3975CFAAF38704E /* Sources */,
+				D27250AAC24B6B0A547369739916378E /* Frameworks */,
+				01CF8C96F59AE6F2244A94B33E156078 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ACPaginatorViewController;
+			productName = ACPaginatorViewController;
+			productReference = 4DAD0CC3C54C50512CFE6076B2763C75 /* ACPaginatorViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BAB2A9763CD4DCAABFDAA1F452B685EB /* Pods-ACPaginatorViewController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01EBF039DC8FBCEAE180B5227FFA27B1 /* Build configuration list for PBXNativeTarget "Pods-ACPaginatorViewController_Example" */;
+			buildPhases = (
+				480F1B5912E21BC3F197B1F6923210E1 /* Sources */,
+				24D483FD7422BDA6C45E4DCC09D936FE /* Frameworks */,
+				E6A681CEB4A4CC960C676DD7BEB6E9A9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E3C0898F3D59E2397A4D2376ED79B55 /* PBXTargetDependency */,
+			);
+			name = "Pods-ACPaginatorViewController_Example";
+			productName = "Pods-ACPaginatorViewController_Example";
+			productReference = F28827C86AA28C9FA7766E16CD15AC50 /* Pods_ACPaginatorViewController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C99364A382C82703CF201CEB1EC106BD /* Pods-ACPaginatorViewController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79B2FA9A7994359B5DD621B2C28A7D13 /* Build configuration list for PBXNativeTarget "Pods-ACPaginatorViewController_Tests" */;
+			buildPhases = (
+				3D52698B03E906FBF4D03CB6C5BFA381 /* Sources */,
+				B0330E30C3E57C9F4EEB18FB528EC7C6 /* Frameworks */,
+				966D55F41EB040AF4D33E5FDAE599BF8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ACPaginatorViewController_Tests";
+			productName = "Pods-ACPaginatorViewController_Tests";
+			productReference = C2A9F2EF41CF1D43F491C8FEC80618F0 /* Pods_ACPaginatorViewController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D10A1F3AB2222E36D867615DAD96ADB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D5A3199C174B48299875006E7D66048 /* ACPaginatorViewController */,
+				BAB2A9763CD4DCAABFDAA1F452B685EB /* Pods-ACPaginatorViewController_Example */,
+				C99364A382C82703CF201CEB1EC106BD /* Pods-ACPaginatorViewController_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D52698B03E906FBF4D03CB6C5BFA381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08B743FAC63AFED865B2F9FAD47EB7C4 /* Pods-ACPaginatorViewController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		480F1B5912E21BC3F197B1F6923210E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3286494427F9DF98D3291E556385963D /* Pods-ACPaginatorViewController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C516D3A1626818E9A3975CFAAF38704E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC7DDF11D12999D0086FB11 /* ACPaginatorViewControllerDelegate.swift in Sources */,
+				B670C33DD85AEB0324A6C06C1D9797D4 /* ACPaginatorViewController-dummy.m in Sources */,
+				FAC7DDEF1D1298F50086FB11 /* ACPaginatorViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E3C0898F3D59E2397A4D2376ED79B55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPaginatorViewController;
+			target = 2D5A3199C174B48299875006E7D66048 /* ACPaginatorViewController */;
+			targetProxy = AA30D3305CD41DAF263BDD6CFFAD1C7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		454D6D866D91F0FD3DB36B2CBF22EE9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D63A79ED9C3D5E72A6183CCE5D3ECBD0 /* ACPaginatorViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ACPaginatorViewController/ACPaginatorViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPaginatorViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ACPaginatorViewController/ACPaginatorViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ACPaginatorViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		50720A1EF7C075EAFD9E8ACF57FAC9D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA26A90BD46F34E9B3A41598EB681CE6 /* Pods-ACPaginatorViewController_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ACPaginatorViewController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ACPaginatorViewController_Example/Pods-ACPaginatorViewController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ACPaginatorViewController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		624278AA983CF0F955E795ECE5F85D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FF6F855DFE2EDDFEEF72C27408286C7 /* Pods-ACPaginatorViewController_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ACPaginatorViewController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ACPaginatorViewController_Tests/Pods-ACPaginatorViewController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ACPaginatorViewController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6DB7DE14DB29A20C66233A3D6F48352D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D63A79ED9C3D5E72A6183CCE5D3ECBD0 /* ACPaginatorViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ACPaginatorViewController/ACPaginatorViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ACPaginatorViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ACPaginatorViewController/ACPaginatorViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ACPaginatorViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4F8C48FBFEE9FA73A77ECBDFCFABC15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28B111B05D1BC3771974D734624B6406 /* Pods-ACPaginatorViewController_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ACPaginatorViewController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ACPaginatorViewController_Example/Pods-ACPaginatorViewController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ACPaginatorViewController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BEDF28FF61F0E6DD90FA26A52B97B77E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBC21BDBD5FD080E6FBA3611B4A52438 /* Pods-ACPaginatorViewController_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ACPaginatorViewController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ACPaginatorViewController_Tests/Pods-ACPaginatorViewController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ACPaginatorViewController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01EBF039DC8FBCEAE180B5227FFA27B1 /* Build configuration list for PBXNativeTarget "Pods-ACPaginatorViewController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50720A1EF7C075EAFD9E8ACF57FAC9D9 /* Debug */,
+				B4F8C48FBFEE9FA73A77ECBDFCFABC15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C0AA2A8B55FF5A1A9A6141B5A5EA5B0 /* Build configuration list for PBXNativeTarget "ACPaginatorViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DB7DE14DB29A20C66233A3D6F48352D /* Debug */,
+				454D6D866D91F0FD3DB36B2CBF22EE9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79B2FA9A7994359B5DD621B2C28A7D13 /* Build configuration list for PBXNativeTarget "Pods-ACPaginatorViewController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624278AA983CF0F955E795ECE5F85D85 /* Debug */,
+				BEDF28FF61F0E6DD90FA26A52B97B77E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
