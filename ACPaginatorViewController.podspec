@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ACPaginatorViewController'
-  s.version          = '0.1.3'
+  s.version          = '0.2.0'
   s.summary          = 'Simple way to create a list of view with a pagination transition.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Simple way to create a list of view with a pagination transition.
+Simple way to create a list of view with a pagination transition. You need only to set a list of viewControllers and other few stuff.
                        DESC
 
   s.homepage         = 'https://github.com/CorlaOnline/ACPaginatorViewController.git'

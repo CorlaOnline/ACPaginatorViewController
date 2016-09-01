@@ -39,7 +39,7 @@ lazy var orderedViewControllers: [UIViewController] = {
 ```
 In your storyboard connect a ``` UIContainerView``` to your variable ``` containerView ``` and the embedded ``` UIPageViewController ``` must to be a ``` ACPaginatorViewController ```, optionally you can connect a ``` UIPageControl ``` to your ``` pageControl ``` variable.
 
-Return to your viewController file and in the ``` prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)``` method you have to pass to the navigator the ordered array of views and tell it that the view conforms to its protocol.
+Return to your viewController file and in the ``` prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)``` method you have to pass to the navigator the ordered array of views and tell it that the view conforms to its protocol. You can also specify from which index start to show the views.
 
 ```swift 
 override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -48,6 +48,7 @@ override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 
        paginatorViewController.orderedViewControllers = orderedViewControllers
        paginatorViewController.paginationDelegate = self
+       paginatorViewController.startViewControllerIndex = 0 // By default is 0, so you can set it only if you need to start from a differen index
 
     }
 
