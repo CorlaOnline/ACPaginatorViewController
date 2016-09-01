@@ -22,6 +22,7 @@ public class ACPaginatorViewController: UIPageViewController {
         if let firstViewController = orderedViewControllers.first {
 
             setViewControllers([firstViewController], direction: .Forward, animated: true, completion: nil)
+            paginationDelegate?.paginatorViewController?(self, didUpdatePageIndex: 0)
 
         }
 
