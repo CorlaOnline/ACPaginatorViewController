@@ -18,9 +18,10 @@ class ViewController: UIViewController, ACPaginatorViewControllerDelegate {
 
         guard let
             firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("First") as UIViewController?,
-            secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Second") as UIViewController? else { return [] }
+            secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Second") as UIViewController?,
+            thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Third") as UIViewController? else { return [] }
 
-        return [firstVC, secondVC]
+        return [firstVC, secondVC, thirdVC]
 
     }()
 
@@ -38,6 +39,7 @@ class ViewController: UIViewController, ACPaginatorViewControllerDelegate {
 
             paginatorViewController.orderedViewControllers = orderedViewControllers
             paginatorViewController.paginationDelegate = self
+            paginatorViewController.startViewControllerIndex = 1
 
         }
 

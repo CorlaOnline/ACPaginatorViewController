@@ -11,6 +11,8 @@ public class ACPaginatorViewController: UIPageViewController {
     public var paginationDelegate: ACPaginatorViewControllerDelegate?
 
     public var orderedViewControllers: [UIViewController] = []
+    
+    public var startViewControllerIndex: Int = 0
 
     override public func viewDidLoad() {
 
@@ -18,17 +20,26 @@ public class ACPaginatorViewController: UIPageViewController {
 
         dataSource = self
         delegate = self
-
-        if let firstViewController = orderedViewControllers.first {
-
-            setViewControllers([firstViewController], direction: .Forward, animated: true, completion: nil)
-            paginationDelegate?.paginatorViewController?(self, didUpdatePageIndex: 0)
-
-        }
-
+        
         paginationDelegate?.pageControl?.numberOfPages = orderedViewControllers.count
         paginationDelegate?.paginatorViewController?(self, didUpdatePageCount: orderedViewControllers.count)
 
+        guard orderedViewControllers.count > 0 else { return }
+        
+        if startViewControllerIndex >= orderedViewControllers.count {
+            
+            startViewControllerIndex = orderedViewControllers.count - 1
+            
+        } else if startViewControllerIndex < 0  {
+        
+            startViewControllerIndex = 0
+        
+        }
+        
+        setViewControllers([orderedViewControllers[startViewControllerIndex]], direction: .Forward, animated: true, completion: nil)
+        paginationDelegate?.pageControl?.currentPage = startViewControllerIndex
+        paginationDelegate?.paginatorViewController?(self, didUpdatePageIndex: startViewControllerIndex)
+        
     }
 
     override public func didReceiveMemoryWarning() {
@@ -75,13 +86,13 @@ extension ACPaginatorViewController: UIPageViewControllerDelegate {
 
     public func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
 
-        if let firstViewController = viewControllers?.first,
-            let index = orderedViewControllers.indexOf(firstViewController) {
+        guard let
+            firstViewController = viewControllers?.first,
+            index = orderedViewControllers.indexOf(firstViewController) else { return }
 
-            paginationDelegate?.pageControl?.currentPage = index
-            paginationDelegate?.paginatorViewController?(self, didUpdatePageIndex: index)
+        paginationDelegate?.pageControl?.currentPage = index
+        paginationDelegate?.paginatorViewController?(self, didUpdatePageIndex: index)
 
-        }
     }
 
 }
