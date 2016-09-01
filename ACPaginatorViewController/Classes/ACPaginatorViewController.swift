@@ -28,7 +28,7 @@ public class ACPaginatorViewController: UIPageViewController {
         
         if startViewControllerIndex >= orderedViewControllers.count {
             
-            startViewControllerIndex = orderedViewControllers.count - 1
+            startViewControllerIndex = orderedViewControllers.endIndex
             
         } else if startViewControllerIndex < 0  {
         
