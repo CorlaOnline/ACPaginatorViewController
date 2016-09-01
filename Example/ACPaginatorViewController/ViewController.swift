@@ -10,18 +10,18 @@ import UIKit
 import ACPaginatorViewController
 
 class ViewController: UIViewController, ACPaginatorViewControllerDelegate {
-    
+
     @IBOutlet weak var pageControl: UIPageControl?
     @IBOutlet weak var containerView: UIView!
-    
+
     lazy var orderedViewControllers: [UIViewController] = {
-        
-        guard let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("First") as UIViewController? else { return [] }
-        
-        guard let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Second") as UIViewController? else { return [] }
-        
+
+        guard let
+            firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("First") as UIViewController?,
+            secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Second") as UIViewController? else { return [] }
+
         return [firstVC, secondVC]
-        
+
     }()
 
     override func viewDidLoad() {

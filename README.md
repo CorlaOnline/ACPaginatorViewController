@@ -29,15 +29,15 @@ Your viewController must conform the ```ACPaginatorViewControllerDelegate``` so 
 @IBOutlet weak var containerView: UIView!
 lazy var orderedViewControllers: [UIViewController] = { 
 
-	guard let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("First") as UIViewController? else { return [] }
-        
-  	guard let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Second") as UIViewController? else { return [] }
+	guard let 
+        firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("First") as UIViewController?,
+        secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Second") as UIViewController? else { return [] }
         
     return [firstVC, secondVC]
         
 }()
 ```
-In your storyboard connect a ``` UIContainerView``` to your variable ``` containerView ``` and the embedded ViewController must to be a ``` ACPaginatorViewController ```, optionally you can connect a ``` UIPageControl ``` to your ``` pageControl ``` variable.
+In your storyboard connect a ``` UIContainerView``` to your variable ``` containerView ``` and the embedded ``` UIPageViewController ``` must to be a ``` ACPaginatorViewController ```, optionally you can connect a ``` UIPageControl ``` to your ``` pageControl ``` variable.
 
 Return to your viewController file and in the ``` prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)``` method you have to pass to the navigator the ordered array of views and tell it that the view conforms to its protocol.
 
