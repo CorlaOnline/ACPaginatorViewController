@@ -11,8 +11,8 @@ public class ACPaginatorViewController: UIPageViewController {
     public var paginationDelegate: ACPaginatorViewControllerDelegate?
 
     public var orderedViewControllers: [UIViewController] = []
-    
-    public var startViewControllerIndex: Int = 0
+
+    public var currentViewControllerIndex: Int = 0
 
     override public func viewDidLoad() {
 
@@ -20,26 +20,32 @@ public class ACPaginatorViewController: UIPageViewController {
 
         dataSource = self
         delegate = self
-        
+
         paginationDelegate?.pageControl?.numberOfPages = orderedViewControllers.count
         paginationDelegate?.paginatorViewController?(self, didUpdatePageCount: orderedViewControllers.count)
 
         guard orderedViewControllers.count > 0 else { return }
-        
-        if startViewControllerIndex >= orderedViewControllers.count {
-            
-            startViewControllerIndex = orderedViewControllers.endIndex
-            
-        } else if startViewControllerIndex < 0  {
-        
-            startViewControllerIndex = 0
-        
+
+        if currentViewControllerIndex >= orderedViewControllers.count {
+
+            currentViewControllerIndex = orderedViewControllers.count - 1
+
+        } else if currentViewControllerIndex < 0 {
+
+            currentViewControllerIndex = 0
+
         }
-        
-        setViewControllers([orderedViewControllers[startViewControllerIndex]], direction: .Forward, animated: true, completion: nil)
-        paginationDelegate?.pageControl?.currentPage = startViewControllerIndex
-        paginationDelegate?.paginatorViewController?(self, didUpdatePageIndex: startViewControllerIndex)
-        
+
+    }
+
+    public override func viewDidAppear(animated: Bool) {
+
+        super.viewDidAppear(animated)
+
+        setViewControllers([orderedViewControllers[currentViewControllerIndex]], direction: .Forward, animated: true, completion: nil)
+        paginationDelegate?.pageControl?.currentPage = currentViewControllerIndex
+        paginationDelegate?.paginatorViewController?(self, didUpdatePageIndex: currentViewControllerIndex)
+
     }
 
     override public func didReceiveMemoryWarning() {
@@ -61,7 +67,9 @@ extension ACPaginatorViewController: UIPageViewControllerDataSource {
 
         guard orderedViewControllers.count > previousIndex else { return nil }
 
-        return orderedViewControllers[previousIndex]
+        currentViewControllerIndex = previousIndex
+
+        return orderedViewControllers[currentViewControllerIndex]
 
     }
 
@@ -76,7 +84,9 @@ extension ACPaginatorViewController: UIPageViewControllerDataSource {
 
         guard orderedViewControllersCount > nextIndex else { return nil }
 
-        return orderedViewControllers[nextIndex]
+        currentViewControllerIndex = nextIndex
+
+        return orderedViewControllers[currentViewControllerIndex]
 
     }
 

@@ -39,7 +39,7 @@ class ViewController: UIViewController, ACPaginatorViewControllerDelegate {
 
             paginatorViewController.orderedViewControllers = orderedViewControllers
             paginatorViewController.paginationDelegate = self
-            paginatorViewController.startViewControllerIndex = 1
+            paginatorViewController.currentViewControllerIndex = 1
 
         }
 

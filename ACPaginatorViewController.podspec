@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ACPaginatorViewController'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.summary          = 'Simple way to create a list of view with a pagination transition.'
 
 # This description is used to generate tags and improve search results.
