@@ -19,7 +19,7 @@
      - parameter paginatorViewController: the ACPaginatorViewController instance
      - parameter count: the total number of pages.
      */
-    @objc optional func paginatorViewController(paginatorViewController: ACPaginatorViewController, didUpdatePageCount count: Int)
+    @objc optional func paginatorViewController(_ paginatorViewController: ACPaginatorViewController, didUpdatePageCount count: Int)
 
     /**
      Called when the current index is updated.
@@ -27,6 +27,6 @@
      - parameter paginatorViewController: the ACPaginatorViewController instance
      - parameter index: the index of the currently visible page.
      */
-    @objc optional func paginatorViewController(paginatorViewController: ACPaginatorViewController, didUpdatePageIndex index: Int)
+    @objc optional func paginatorViewController(_ paginatorViewController: ACPaginatorViewController, didUpdatePageIndex index: Int)
 
 }

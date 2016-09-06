@@ -13,13 +13,12 @@ class ViewController: UIViewController, ACPaginatorViewControllerDelegate {
 
     @IBOutlet weak var pageControl: UIPageControl?
     @IBOutlet weak var containerView: UIView!
+    
+    var orderedViewControllers: [UIViewController] = {
 
-    lazy var orderedViewControllers: [UIViewController] = {
-
-        guard let
-            firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("First") as UIViewController?,
-            secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Second") as UIViewController?,
-            thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Third") as UIViewController? else { return [] }
+        guard let firstVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "First") as UIViewController?,
+            let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Second") as UIViewController?,
+            let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Third") as UIViewController? else { return [] }
 
         return [firstVC, secondVC, thirdVC]
 
@@ -28,14 +27,14 @@ class ViewController: UIViewController, ACPaginatorViewControllerDelegate {
     override func viewDidLoad() {
 
         super.viewDidLoad()
-
+        
     }
 
     // MARK: - Navigation
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-        if let paginatorViewController = segue.destinationViewController as? ACPaginatorViewController {
+        if let paginatorViewController = segue.destination as? ACPaginatorViewController {
 
             paginatorViewController.orderedViewControllers = orderedViewControllers
             paginatorViewController.paginationDelegate = self
