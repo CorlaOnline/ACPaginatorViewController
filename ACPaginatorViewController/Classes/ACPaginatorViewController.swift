@@ -58,7 +58,7 @@ open class ACPaginatorViewController: UIPageViewController {
 }
 
 extension ACPaginatorViewController: UIPageViewControllerDataSource {
-
+    
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
 
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else { return nil }

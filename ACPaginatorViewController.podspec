@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ACPaginatorViewController'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Simple way to create a list of view with a pagination transition.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Simple way to create a list of view with a pagination transition. You need only 
   s.source           = { :git => 'https://github.com/CorlaOnline/ACPaginatorViewController.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/corlaOnline'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'ACPaginatorViewController/Classes/**/*'
 
