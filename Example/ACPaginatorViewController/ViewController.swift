@@ -20,7 +20,11 @@ class ViewController: UIViewController, ACPaginatorViewControllerDelegate {
             let secondVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Second") as UIViewController?,
             let thirdVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Third") as UIViewController? else { return [] }
 
-        return [firstVC, secondVC, thirdVC]
+        let firstDoubleVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "First") as! FirstViewController
+        
+        firstDoubleVC.paginatorIndex = 2
+        
+        return [firstVC, secondVC, firstDoubleVC, thirdVC]
 
     }()
 

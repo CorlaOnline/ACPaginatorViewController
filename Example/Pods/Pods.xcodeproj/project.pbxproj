@@ -18,6 +18,7 @@
 		8058838B0765CF5CA29EC0C6F95D2109 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		C7D4FEF9F78284DE8060DF503661267E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		D942664D77AB6AE4E542AF763380445B /* ACPaginatorViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AF0995F58C2C12FCBEDE30EAC7C30D /* ACPaginatorViewControllerDelegate.swift */; };
+		FAE0648D1E4DD0DE000E3830 /* ACPaginatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0648C1E4DD0DE000E3830 /* ACPaginatorProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		F254896AEA4456837852B4828CA22A4A /* Pods-ACPaginatorViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ACPaginatorViewController_Example-umbrella.h"; sourceTree = "<group>"; };
 		F28827C86AA28C9FA7766E16CD15AC50 /* Pods_ACPaginatorViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACPaginatorViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F65AF3E673DF0EC8ACE456A665D3F29F /* Pods-ACPaginatorViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ACPaginatorViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FAE0648C1E4DD0DE000E3830 /* ACPaginatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACPaginatorProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 			children = (
 				1D14D093307F7AF200369715F4AA1BBD /* ACPaginatorViewController.swift */,
 				78AF0995F58C2C12FCBEDE30EAC7C30D /* ACPaginatorViewControllerDelegate.swift */,
+				FAE0648C1E4DD0DE000E3830 /* ACPaginatorProtocol.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				6DD854E77D9E584086A6F89BCA34950F /* ACPaginatorViewController-dummy.m in Sources */,
 				3E8412C61E30032BA817AB02544A581F /* ACPaginatorViewController.swift in Sources */,
 				D942664D77AB6AE4E542AF763380445B /* ACPaginatorViewControllerDelegate.swift in Sources */,
+				FAE0648D1E4DD0DE000E3830 /* ACPaginatorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

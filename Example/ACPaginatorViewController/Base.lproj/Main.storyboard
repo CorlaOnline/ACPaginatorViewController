@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EAz-sV-kci">
@@ -25,14 +29,14 @@
                             </containerView>
                             <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="HYh-oQ-xDX">
                                 <rect key="frame" x="281" y="543" width="39" height="40"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="MN5-JM-jk5"/>
                                     <constraint firstAttribute="width" constant="100" id="hqA-KL-DQ9"/>
                                 </constraints>
                             </pageControl>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="HYh-oQ-xDX" firstAttribute="centerX" secondItem="EAz-sV-kci" secondAttribute="centerX" id="9tj-Tk-DXe"/>
                             <constraint firstAttribute="trailing" secondItem="EAz-sV-kci" secondAttribute="trailing" id="EAQ-nK-0Pp"/>
@@ -51,18 +55,18 @@
             </objects>
             <point key="canvasLocation" x="326" y="343"/>
         </scene>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="fiD-3a-mDR">
             <objects>
-                <viewController storyboardIdentifier="First" id="M7S-aX-czV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="First" id="M7S-aX-czV" customClass="FirstViewController" customModule="ACPaginatorViewController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fz0-Md-s2R"/>
                         <viewControllerLayoutGuide type="bottom" id="FYm-d5-Qv1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MjC-xr-heD">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EkF-0R-5hX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,36 +81,36 @@
             </objects>
             <point key="canvasLocation" x="921" y="343"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="rQ9-cF-GVB">
             <objects>
-                <viewController storyboardIdentifier="Second" id="6U2-QO-h8l" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Second" id="6U2-QO-h8l" customClass="SecondViewController" customModule="ACPaginatorViewController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nqZ-qk-AJZ"/>
                         <viewControllerLayoutGuide type="bottom" id="WVe-r1-hLZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9lg-lb-cmT">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.10980392160000001" green="0.83921568629999999" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.10980392160000001" green="0.83921568629999999" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ywl-ph-tBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1420" y="766"/>
         </scene>
-        <!--View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="Aja-rb-xEP">
             <objects>
-                <viewController storyboardIdentifier="Third" id="Ms4-C9-6ig" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Third" id="Ms4-C9-6ig" customClass="ThirdViewController" customModule="ACPaginatorViewController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="spc-O1-bxA"/>
                         <viewControllerLayoutGuide type="bottom" id="iZs-td-yRt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TLj-RT-Yg1">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYO-Cf-TDE" userLabel="First Responder" sceneMemberID="firstResponder"/>

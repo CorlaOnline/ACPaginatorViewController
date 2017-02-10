@@ -61,7 +61,11 @@ extension ACPaginatorViewController: UIPageViewControllerDataSource {
     
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
 
-        guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else { return nil }
+        //guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else { return nil }
+        
+        guard let page = viewController as? ACPaginatorProtocol else { return nil }
+        
+        let viewControllerIndex = page.paginatorIndex
 
         let previousIndex = viewControllerIndex - 1
 
@@ -77,7 +81,11 @@ extension ACPaginatorViewController: UIPageViewControllerDataSource {
 
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
 
-        guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else { return nil }
+        //guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else { return nil }
+        
+        guard let page = viewController as? ACPaginatorProtocol else { return nil }
+
+        let viewControllerIndex = page.paginatorIndex
 
         let nextIndex = viewControllerIndex + 1
         let orderedViewControllersCount = orderedViewControllers.count
@@ -98,10 +106,15 @@ extension ACPaginatorViewController: UIPageViewControllerDelegate {
 
     public func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
 
-        guard let
-            firstViewController = viewControllers?.first,
+        /*guard
+            let firstViewController = viewControllers?.first,
             let index = orderedViewControllers.index(of: firstViewController) else { return }
-
+        */
+        
+        guard let firstViewController = viewControllers?.first as? ACPaginatorProtocol else { return }
+        
+        let index = firstViewController.paginatorIndex
+        
         paginationDelegate?.pageControl?.currentPage = index
         paginationDelegate?.paginatorViewController?(self, didUpdatePageIndex: index)
 
